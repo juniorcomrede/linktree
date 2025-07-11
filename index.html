@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTS News Trading Method</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-top: 0.5rem;
+        }
+        p {
+            font-size: 1rem;
+            max-width: 600px;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+        .btn {
+            margin-top: 2rem;
+            background: linear-gradient(90deg, #FFD700, #FFB700);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: black;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+        }
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-bg" autoplay muted loop id="bgVideo">
+        <source src="earth.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <h1>THE NTS STRATEGY PRINTS YOU A LOT!</h1>
+        <h2>NEWS TRADING METHOD</h2>
+        <p>“This unlimited money-printing news trading strategy, developed by Najih, focuses on high-impact events for precise, low-risk, high-reward gold scalping.”</p>
+        <button class="btn" onclick="window.location.href='index1.html'">LEARN NEWS TRADING</button>
+    </div>
+</body>
+</html>
